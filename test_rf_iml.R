@@ -32,7 +32,7 @@ library(iml)
 set.seed(78546)
 X <- subset(iris, select = -Species)[-130L, ]
 y <- iris$Species[-130L]
-rf <- randomForest(X, y, ntree = 20L)
+rf <- randomForest(X, y, ntree = 32L)
 predictor <- iml::Predictor$new(rf,
                                  data = iris[-130L, ],
                                  y = "Species",
