@@ -43,4 +43,5 @@ print(result)
 write.csv(result, file = "prediction_result.csv", row.names = FALSE)
 sessionInfo()
 print(RNGkind())
+print(.Random.seed)
 
